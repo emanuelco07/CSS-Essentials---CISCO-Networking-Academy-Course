@@ -1,11 +1,19 @@
-.parent {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  border: 1px solid black;
-  padding: 10px;
+h1 {
+  color: rgb(0, 128, 0);
+  /* Dark Green using RGB */
 }
 
 p {
-  font-size: 20px;
-  color: green;
+  color: #FF5733;
+  /* Bright Orange using HEX */
+}
+
+.vivid {
+  color: hsl(210, 100%, 50%);
+  /* Vivid Blue using HSL */
+}
+
+a {
+  color: pink;
+  /* Pink color using named color */
 }
