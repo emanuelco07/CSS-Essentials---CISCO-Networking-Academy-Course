@@ -1,17 +1,16 @@
 .box {
-  width: 100px;
+  /* Content dimensions */
+  width: 200px;
   height: 100px;
-  position: absolute;
-}
+/* Padding around content */
+padding: 20px;
 
-.box1 {
-  background-color: red;
-  z-index: 1;
-}
+/* Border around padding */
+border: 5px solid #333;
 
-.box2 {
-  background-color: green;
-  z-index: 2;
-  top: 1rem;
-  left: 1rem;
+/* Margin around border */
+margin: 30px;
+
+/* Additional styles for better visualization */
+background-color: #f4f4f4;
 }
