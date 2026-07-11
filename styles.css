@@ -1,12 +1,15 @@
-.sticky-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0; /* Set to stick at the top of the viewport */
-    background-color: #333;
-    color: white;
-    padding: 10px;
+.basic-table {
     width: 100%;
+    border-collapse: collapse; /*Eliminates the space between borders*/
 }
-.content {
-padding: 20px;
+
+.basic-table th, .basic-table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 8px; /* Padding for cell content */
+    text-align: left; /* Aligns text to the left */
+}
+
+.basic-table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    color: #333; /* Dark text color for contrast */
 }
