@@ -1,22 +1,24 @@
-.custom-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
+fieldset {
+    width: 350px;
     border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.custom-form label {
-    margin-top: 10px;
-    display: block;
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
     color: #333;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.custom-form input[type="text"],
-.custom-form input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Styling for input fields within the fieldset */
+fieldset input {
+    margin-bottom: 10px;
+    /* Other input styles */
 }
