@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+header {
+    background: url('https://edube.org/uploads/media/default/0001/04/products_image.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-form form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form fieldset {
+    border: none;
+}
+
+.product-specs {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-specs th,
+.product-specs td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-specs tr:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
