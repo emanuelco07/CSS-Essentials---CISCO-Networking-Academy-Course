@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    background-color: #e2e2e2;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 768px)
+{
+    .column {
+        float: none;
+        width: 100%;
+    }
+}
+
+row {
+    overflow: hidden;
+}
+
+.post img {
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+}
