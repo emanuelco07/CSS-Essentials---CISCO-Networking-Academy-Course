@@ -1,12 +1,32 @@
 .flex-container {
     display: flex;
-    justify-content: space-evenly; /* Horizontally aligns items with space around them */
-    align-items: center; /* Vertically aligns items in the center */
+    flex-direction: row;
+    /* Items are laid out in a row */
+    justify-content: space-between;
+    /* Distribute space between items */
+    align-items: center;
+    /* Vertically align items in the center */
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line */
+    background: #e3e3e3;
+    /* Container background color for visibility */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    height: 300px;
+    /* Fixed height to demonstrate wrapping and alignment */
 }
 
-.flex-container > div {
-    background-color: lightblue;
-    padding: 10px;
+.flex-item {
+    flex: 1 1 100px;
+    /* flex-grow | flex-shrink | flex-basis */
     margin: 5px;
-    flex-grow: 1; /* Allows the items to grow to fill available space */
+    /* Margin around items */
+    padding: 10px;
+    /* Padding inside items */
+    background: #4CAF50;
+    /* Item background color for visibility */
+    text-align: center;
+    /* Center text within items */
+    border: 1px solid #333333;
+    /* Border for items for visibility */
 }
