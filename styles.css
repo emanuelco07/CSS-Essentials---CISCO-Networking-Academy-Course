@@ -1,17 +1,17 @@
-.flex-container {
+.shape-container {
     display: flex;
+    justify-content: center;
+    /* Center the shape horizontally */
     align-items: center;
-    /* Default alignment for all items */
+    /* Center the shape vertically */
     height: 200px;
-    /* To better demonstrate alignment */
+    /* Set height of the container */
 }
 
-.item {
-    flex: 1;
-    /* Items take up equal space */
-}
-
-.item.special {
-    align-self: center;
-    /* This item is aligned to the start of the cross axis */
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* Create a diamond shape */
 }
