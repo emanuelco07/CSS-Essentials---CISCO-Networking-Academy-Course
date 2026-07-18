@@ -1,23 +1,21 @@
-.grid-container-block {
+.grid-container {
     display: grid;
-    grid-template-columns: 100px 100px;
-    gap: 10px;
-    background-color: lightblue;
-    margin-bottom: 20px;
-    /* For separation */
-}
-
-.grid-container-inline {
-    display: inline-grid;
-    grid-template-columns: 100px 100px;
-    gap: 10px;
-    background-color: lightgreen;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .grid-item {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: lightgray;
+    /* Common styles for grid items */
+}
+
+.item1 {
+    justify-self: start;
+    /* Aligns item to the start of the cell along the row axis */
+    align-self: end;
+    /* Aligns item to the end of the cell along the column axis */
+}
+
+.item2 {
+    place-self: center center;
+    /* Shorthand to center the item both along the row and column axes */
 }
