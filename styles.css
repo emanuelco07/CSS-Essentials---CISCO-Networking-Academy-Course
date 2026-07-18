@@ -1,30 +1,21 @@
-.news-container {
+.card-container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    /* Main content is 3 times wider than the sidebar */
-    grid-template-rows: auto 1fr auto;
-    /* Header and footer with auto height, main content grows */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Creates as many columns as can fit */
+    gap: 10px;
 }
 
-header,
-article,
-aside,
-footer {
-    padding: 20px;
-    background-color: lightgrey;
+.card {
+    height: 300px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header,
-footer {
-    grid-column: 1 / -1;
-    /* Span from the first to the last column */
-}
-
-article {
-    grid-column: 1;
-}
-
-aside {
-    grid-column: 2;
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        /* Single column layout on small screens */
+    }
 }
