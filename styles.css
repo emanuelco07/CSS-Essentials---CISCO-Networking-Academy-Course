@@ -1,21 +1,20 @@
-.grid-container {
+.gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* Creates a 3-column layout */
+    gap: 10px;
+    /* Space between grid items */
 }
 
-.grid-item {
-    /* Common styles for grid items */
+.gallery-item {
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item1 {
-    justify-self: start;
-    /* Aligns item to the start of the cell along the row axis */
-    align-self: end;
-    /* Aligns item to the end of the cell along the column axis */
-}
-
-.item2 {
-    place-self: center center;
-    /* Shorthand to center the item both along the row and column axes */
+.gallery img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
 }
