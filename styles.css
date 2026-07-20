@@ -1,41 +1,12 @@
-/* Define the keyframes for sliding animation */
-@keyframes slideAnimation {
-    from {
-        transform: translateX(-100%);
-        /* Start off-screen to the left */
-    }
-
-    to {
-        transform: translateX(0);
-        /* End at the element's original position */
-    }
+/* Define the typing animation */
+@keyframes typingAnimation {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-/* Apply the animation to your element */
-.sliding-element {
-    display: inline-block;
-    /* or block, depending on your layout */
-    width: 200px;
-    /* Width of the element */
-    height: 50px;
-    /* Height of the element */
-    background-color: #f44336;
-    /* Background color of the element */
-    color: white;
-    /* Text color */
-    text-align: center;
-    /* Align text in the center */
-    line-height: 50px;
-    /* Align text vertically */
-    position: relative;
-    /* Required for the translateX function to work correctly */
-
-    animation-name: slideAnimation;
-    /* Reference the name of your keyframes */
-    animation-duration: 2s;
-    /* Set the duration of one animation cycle */
-    animation-timing-function: ease-out;
-    /* Start fast and decelerate smoothly */
-    animation-iteration-count: 1;
-    /* Run the animation only once */
+/* Apply the animation to a text container */
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnimation 3s steps(90, end) infinite; /* Type out text */
 }
