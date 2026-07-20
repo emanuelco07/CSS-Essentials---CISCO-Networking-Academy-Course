@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+.projects {
+    display: grid;
+    gap: 10px;
+}
+
+.project-card {
+    padding: 5px 5px;
+    margin: 5px 5px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 8px #888888;
+}
