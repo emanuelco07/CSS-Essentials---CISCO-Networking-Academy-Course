@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.2;
+    transition: opacity 2s ease-in-out;
+}
+
+header:hover {
+    opacity: 1;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    text-decoration: 0;
+    margin-left: 10px;
+    color: white;
+}
+
+.product-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product-image {
+    width: 300px;
+    animation: rotate 10s infinite linear;
+
+    animation-name: rotateAnimation;
+    /* Reference the name of your keyframes */
+    animation-duration: 10s;
+    /* Set the duration of one animation cycle */
+    animation-timing-function: linear;
+    /* Define a steady pace for the animation */
+    animation-iteration-count: infinite;
+}
+
+
+.buy-now {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #f44336;
+    transform: scale(1.2);
+}
+
+.feature-item {
+    animation-name: slideAnimation;
+    /* Reference the name of your keyframes */
+    animation-duration: 2s;
+    /* Set the duration of one animation cycle */
+    animation-timing-function: ease-out;
+    /* Start fast and decelerate smoothly */
+    animation-iteration-count: 1;
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Define the keyframes for sliding animation */
+@keyframes slideAnimation {
+    from {
+        transform: translateX(-100%);
+        /* Start off-screen to the left */
+    }
+
+    to {
+        transform: translateX(0);
+        /* End at the element's original position */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
