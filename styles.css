@@ -1,12 +1,34 @@
-.gallery-image {
-    width: 200px;
-    height: 200px;
-    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
-    background-size: cover;
-    opacity: 0.7; /* Initial reduced opacity */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition for the opacity property */
+.accordion-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.gallery-image:hover {
-    opacity: 1; /* Full opacity on hover */
+.accordion-header {
+    background-color: #367B48;
+    cursor: pointer;
+    /* Change cursor to pointer to indicate this is clickable */
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* Smooth transition for expanding and collapsing */
+    max-height: 0;
+    /* Start with max-height 0 */
+}
+
+.accordion-header:focus+.accordion-content {
+    display: block;
+    /* Show content when the header is clicked */
+    max-height: 500px;
+    /* Maximum height when expanded */
 }
