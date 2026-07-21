@@ -1,0 +1,74 @@
+@use "sass:list";
+@use "sass:color";
+
+$primary-color: #007bff;
+$font-size: 16px;
+$padding: 20px;
+$text-aling: center;
+
+@mixin rounded-corners ($radius)
+{
+  border-radius: $radius;
+}
+
+body {
+  color: $primary-color;
+  font-size: $font-size;
+}
+
+.header, .footer {
+  background-color: color.scale($primary-color, $lightness: 50%);
+  padding: $padding;
+  text-align: $text-aling;
+}
+
+.feature-list, .example-text {
+  li {
+    @include rounded-corners(10px);
+    padding: 10px;
+    background-color: color.scale($primary-color, $lightness: 25%);
+  }
+}
+
+.header {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+.about {
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: $font-size;
+  }
+}
+
+.features {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .feature-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    li {
+      @include rounded-corners(5px);
+      padding: 5px;
+      margin-bottom: 5px;
+      background-color: color.scale($primary-color, $lightness: 25%);
+    }
+  }
+}
+
+.example {
+  h2 {
+    font-size: 1.5em;
+    .example-text {
+      @include rounded-corners(10px);
+      padding: 10px;
+      background-color: color.scale($primary-color, $lightness: 25%);
+    }
+  }
+}
