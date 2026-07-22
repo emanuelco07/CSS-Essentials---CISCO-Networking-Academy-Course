@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: #333;
+}
+
+.navbar-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-item {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-item a:hover,
+.navbar-item a:focus {
+    text-decoration: underline;
+    color: blue;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+h1 {
+    color: #0654b3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.trivia-item {
+    display: flex;
+    align-items: center;
+}
+
+.trivia-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.categories-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories-list li {
+    margin: 10px;
+}
+
+.categories-list a {
+    color: #0654b3;
+    text-decoration: none;
+}
+
+.categories-list a:hover,
+.categories-list:focus {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+table td,
+th {
+    border: 1px solid lightgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.submit-button {
+    background-color: aquamarine;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    border: 3px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: cyan;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.subscribe-btn:hover {
+    background-color: aquamarine; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.screen-reader-text {
+    position: absolute; /* Positions it out of the flow of the document */
+    width: 1px; /* Minimizes its width */
+    height: 1px; /* Minimizes its height */
+    margin: -1px; /* Moves it out of the viewport */
+    padding: 0; /* Removes padding */
+    overflow: hidden; /* Hides any content that overflows */
+    clip: rect(0, 0, 0, 0); /* Clips the content to a 0 rectangle */
+    border: 0; /* Removes borders */
+}

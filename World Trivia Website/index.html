@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trivia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <li class="navbar-item"><a href="#home">Home</a></li>
+                <li class="navbar-item"><a href="#trivia">Trivia</a></li>
+                <li class="navbar-item"><a href="#categories">Categories</a></li>
+                <li class="navbar-item"><a href="#scores">Scores</a></li>
+                <li class="navbar-item"><a href="#subscribe">Subscribe</a></li>
+                <li class="navbar-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to World Trivia</h1>
+            <p>Discover amazing facts about different countries around the world. Test your knowledge and learn
+                something new every day!</p>
+        </section>
+
+        <section id="trivia">
+            <h2>The Great Wall of China Isn’t Visible from Space</h2>
+            <div class="trivia-item">
+                <img src="images/china-great-wall.webp" alt="Chian Great Wall">
+                <p>Despite the popular myth, astronauts have confirmed that the Great Wall cannot be seen from space
+                    with the naked eye. Still, it remains one of humanity’s most iconic engineering achievements.</p>
+            </div>
+
+            <h2>The Milky Way Contains Over 100 Billion Stars</h2>
+            <div class="trivia-item">
+                <img src="images/milky-way.webp" alt="Milky Way">
+                <p>Our galaxy is a massive spiral structure filled with stars, dust, and dark matter. Even traveling at
+                    the speed of light, it would take about 100,000 years to cross it.</p>
+            </div>
+
+            <h2>Deep-Sea Creatures Can Produce Their Own Light</h2>
+            <div class="trivia-item">
+                <img src="images/deep-sea.webp" alt="Famous Landmark">
+                <p>Many organisms living in the ocean’s darkest depths use bioluminescence to hunt, hide, or
+                    communicate. In places where sunlight never reaches, glowing becomes a survival strategy.</p>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul class="categories-list">
+                <li><a href="#history">History</a></li>
+                <li><a href="#geography">Geography</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#nature">Nature</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Top Scores</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alice</td>
+                        <td>1500</td>
+                        <td>USA</td>
+                        <td>Geography</td>
+                        <td>2024-06-20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Emanuel</td>
+                        <td>1700</td>
+                        <td>Romania</td>
+                        <td>Science</td>
+                        <td>2025-06-20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Andrew</td>
+                        <td>1300</td>
+                        <td>Bulgaria</td>
+                        <td>History</td>
+                        <td>2024-07-20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Daniel</td>
+                        <td>1200</td>
+                        <td>Spain</td>
+                        <td>Culture</td>
+                        <td>2024-06-23</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Sarah</td>
+                        <td>900</td>
+                        <td>USA</td>
+                        <td>Nature</td>
+                        <td>2024-06-20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions or feedback? Get in touch with us!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input class="submit-button" type="submit" value="Submit">
+            </form>
+            <div class="contact-info">
+                <p><img src="images/email-icon.png" alt="Email Icon"> info@worldtrivia.com</p>
+                <p><img src="images/phone-icon.png" alt="Phone Icon"> +1-234-567-890</p>
+            </div </section>
+
+            <section id="subscribe">
+                <h2>Subscribe to Puzzle of the Day</h2>
+                <p>Join our community and get a daily dose of trivia right in your inbox.</p>
+                <button class="subscribe-btn" aria-label="Subscribe to Puzzle of the Day">Subscribe Now</button>
+            </section>
+    </main>
+</body>
+
+</html>
